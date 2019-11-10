@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/Card';
-import client from './functions/contentfull';
+import client from './functions/contentful';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Footer from './components/Footer';

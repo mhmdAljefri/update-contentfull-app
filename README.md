@@ -31,9 +31,9 @@ _NOW we have **contentful** module in the `node_modules` so we can `import` it a
 
 #### Initilize Contentful
 
-In the `src/App.js` we will add code below from [example](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/):
+In the `functions\contentful.js` we will add code below from [example](https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/):
 
-```js
+```js:functions\contentful.js
   import * as contentfull from 'contentful';
 
   // here we can use client to fetch our Data
@@ -55,7 +55,7 @@ Congratulation **Contentfull** was initilized :tada:
 
 Contentfull client hava multiple methods to fetch data from contentful server. And for example we want to list all entries here. To done with this we should use `getEntries` method from client object
 
-```js
+```js:App.js
   client.getEntries()
     .then(function (entries) {
       // log the title for all the entries that have it
