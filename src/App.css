@@ -1,22 +1,142 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  padding: 10px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+header > * {
+  display: flex;
+  align-items: center;
+}
+
+header > * > * {
+  margin: 0 10px;
+  font-weight: bolder;
+}
+
+footer {
+  margin-top: 80px;
+}
+
+.App {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+}
+
+.menu {
+  height: 30px;
+}
+.logo {
+  max-width: 40px;
+}
+
+.banner {
+  background: rgb(252, 238, 250);
+  padding: 4rem;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.search-field {
+  height: 40px;
+  position: relative;
+  max-width: 350px;
+}
+
+.search-field > img {
+  max-width: 30px;
+  position: absolute;
+  margin: 5px;
+}
+
+.search-field > input {
+  display: block;
+  height: 100%;
+  border: 0;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 10px 50px;
+}
+
+.posts-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: auto;
+}
+
+.posts-wrapper::-webkit-scrollbar { 
+  display: none; 
+}
+
+.card {
+  height: 320px;
+  flex: 0 1 200px;
+  min-width: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card > img {
+  transition: all 400ms linear 0s;
+}
+
+.card:hover > img {
+  box-shadow: 0 0 50px #eee;
+  transform: scale(1.3);
+}
+
+.card > h3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 10px 5px;
+  background-color: #ffffff7a;
+  padding: 5px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/**
+  global Classes
+*/
+
+.d-flex {
+  display: flex;
+}
+.ai-center {
+  align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.m-1,
+.m-t-1 {
+  margin-top: 10px;
+}
+.m-1,
+.m-b-1 {
+  margin-bottom: 10px;
+}
+.m-1,
+.m-r-1 {
+  margin-right: 10px;
+}
+.m-1,
+.m-l-1 {
+  margin-left: 10px;
 }
